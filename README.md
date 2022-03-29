@@ -1,4 +1,4 @@
-# Laravel Todo App
+# Laravel App para Tecnologías y Aplicaciones de Internet
 
 ## Installing
 1. Write permissions:
@@ -10,6 +10,9 @@
 2. Install dependencies:
 	~~~
     composer install
+    ~~~
+
+    ~~~
     npm install
     ~~~
 
@@ -34,17 +37,22 @@
     php artisan migrate --seed
     ~~~
     Generates migrations and populates the DB with default data
-## Requirements
+## Extra
+De preferencia crear un virtualhost para que no haya problemas con las rutas.
 
-### Objetive  
-Develop an application in Laravel that implements the basic principles already seen in the handling of views, routes, controllers and data access.  
-### Development  
-- Create in DB the table "todos", which will have the columns: id (int PK autoincrement), todo (varchar(512) NOT NULL), done (int NOT NULL).    
-- Make an "all" view where all the ToDos are displayed. These can be displayed in table format. It must be linked to a controller to fetch the records from the DB.    
-- Make the functionality to add a new ToDo, this can be in another view or a single text field and an add button in the main view. Adding should return or display the record of the added ToDo in the table of the "all" view. When adding, the ToDo is in pending status.    
-- Make a view to edit a ToDo, from the list you can show an [Edit] link and this redirect to another page where you can edit the selected ToDo, when saving you must update the record in DB and redirect to the page/view all.  
-- In the main ToDos list, implement the functionality to update the status to done. Also implement the functionality to return the status to pending.  
-- In the main list, implement the option to delete a ToDo.  
-### Deliverables
-Images of the application running, with all the functionalities.  
-Source code of the project in a ZIP file.  
+* Para Ubuntu:
+    https://simplecodetips.wordpress.com/2018/07/11/crear-virtualhost-con-xampp-en-ubuntu-18-04/
+    
+* Para Windows: 
+    https://desarrolloweb.com/articulos/configurar-virtual-hosts-apache-windows.html
+
+    Otra opción es correr el comando: 
+    ~~~
+    php artisan serve
+    ~~~
+
+[Link](https://getcomposer.org/download/) para instalar composer
+
+[Link](https://nodejs.org/es/) para instalar nodejs
+
+[Link](https://laravel.com/docs/8.x/readme) para la documentación de laravel
